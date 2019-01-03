@@ -12,8 +12,12 @@ namespace Igroland
         public MainPage()
         {
             InitializeComponent();
-            WebView webView = new WebView() { Source="http://igroland.com.ua"};
+            WebView webView = new WebView();
+
+            webView.Source = "http://igroland.com.ua";
+
             this.Content = webView;
         }
+       
     }
 }
